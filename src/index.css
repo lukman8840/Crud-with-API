@@ -1,0 +1,216 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* Align items to the start */
+  background-color: #fff;
+  color: #333;
+  height: 100vh;
+  padding: 20px; /* Added padding for better spacing */
+}
+
+.row {
+  width: 70%;
+  height: fit-content;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column; /* Column layout to stack form and table */
+  align-items: center;
+  color: #333;
+  font-size: 1.5em;
+  text-align: center;
+}
+
+.column {
+  width: 100%;
+  margin: 10px;
+  padding: 40px;
+}
+
+h4 {
+  margin-bottom: 20px;
+  font-size: 32px;
+  color: black;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+label {
+  font-size: 24px;
+  font-weight: lighter;
+  margin-bottom: 10px;
+  justify-content: center;
+  padding: 5px;
+  color: #333;
+}
+
+input, textarea {
+  padding: 15px;
+  border: 1px solid black;
+  border-radius: 5px;
+  width: 100%;
+  max-width: 700px;
+  font-size: 16px;
+}
+
+.lab {
+  justify-content: flex-start;
+}
+
+#body {
+  padding: 14px;
+  width: 60%;
+}
+
+.btn-primary {
+  padding: 12px;
+  margin: 10px;
+  width: 90px;
+  font-size: 20px;
+  cursor: pointer;
+  border: 1px solid black;
+  border-radius: 10px;
+  background-color: #fff;
+  color: #333;
+}
+
+.btn-primary:hover {
+  background-color: #2e8b57;
+  color: #fff;
+  border: 1px solid #fff;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 18px;
+}
+
+.table th, .table td {
+  padding: 10px 20px;
+}
+
+.table thead th {
+  color: #333;
+  font-weight: bold;
+  text-align: center;
+}
+
+tbody {
+  background-color: gray;
+  width: 100%;
+  border-radius: 10px;
+}
+
+.table .action-button:hover {
+  background-color: #2e8b57;
+  color: #fff;
+}
+
+.btn-warning, .btn-danger {
+  padding: 10px;
+  width: 80px;
+  cursor: pointer;
+  background-color: #fff;
+  color: #333;
+  font-size: 18px;
+  border: 1px solid #333;
+  margin: 10px;
+  border-radius: 10px;
+}
+
+.btn-danger:hover {
+  background-color: red;
+  color: #fff;
+  border: none;
+}
+
+.btn-warning:hover {
+  background-color: #2e8b57;
+  color: #fff;
+  border: none;
+}
+
+/* Media Queries */
+
+/* Tablets and larger smartphones */
+@media (max-width: 768px) {
+  .row {
+    width: 90%;
+    font-size: 1.2em;
+  }
+
+  .column {
+    padding: 20px;
+  }
+
+  input, textarea {
+    width: 90%;
+  }
+
+  #body {
+    width: 70%;
+  }
+
+  .btn-primary {
+    width: 80px;
+    font-size: 18px;
+  }
+}
+
+/* Smartphones and small screens */
+@media (max-width: 480px) {
+  .row {
+    width: 100%;
+    font-size: 1em;
+  }
+
+  .column {
+    padding: 10px;
+  }
+
+  h4 {
+    font-size: 24px;
+  }
+
+  label {
+    font-size: 20px;
+  }
+
+  input, textarea {
+    width: 100%;
+  }
+
+  #body {
+    width: 90%;
+  }
+
+  .btn-primary {
+    width: 70px;
+    font-size: 16px;
+  }
+
+  .table th, .table td {
+    padding: 8px 10px;
+  }
+
+  .btn-warning, .btn-danger {
+    padding: 8px;
+    width: 70px;
+    font-size: 16px;
+  }
+}
